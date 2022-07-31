@@ -1,0 +1,267 @@
+/* NavBar */
+#NavBar {
+  font-family: "Work Sans", sans-serif;
+}
+
+.navbarBrand {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 1000;
+  font-size: medium;
+  font-size: larger;
+  color: #124b9d;
+  text-decoration: none;
+}
+
+.navLink {
+  margin-top: 80px;
+  margin-inline: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
+  margin-top: 15px;
+}
+
+.navLink:hover {
+  text-decoration-line: overline;
+  color: black;
+  text-decoration-style: 7px solid;
+  text-decoration-color: #35b226;
+  text-decoration-thickness: 3px;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-underline-offset: 2px;
+}
+
+.cart-quantity {
+  text-align: center;
+  color: white;
+  height: 25px;
+  width: 20px;
+  background-color: #35b226;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: -45px;
+  z-index: 0;
+}
+
+.flex-navBar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-navBar div {
+  margin: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* End of navBar */
+
+/* Content */
+#content {
+  background-color: white;
+  padding: 120px;
+  box-shadow: 0px 3px 5px #bbbbbb inset;
+  margin: 0;
+}
+
+.flex-image {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+}
+
+.btn-content:link,
+.btn-content:visited {
+  background-color: #124b9d;
+  border-radius: 9px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-content:hover,
+.btn-content:active {
+  background-color: #1a74d3;
+}
+
+/* end of Content */
+
+/* Product */
+#products {
+  padding: 4rem 0;
+  background-color: #f6f6f6;
+  margin: 0;
+}
+
+.section-tittle {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.product-center {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+}
+
+.product {
+  background-color: white;
+  width: 290px;
+  height: 400px;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 10px 3px 8px #bbbbbb;
+}
+
+.product-img {
+  margin-block: 2rem;
+  height: 200px;
+  width: 200px;
+}
+
+.product-name-main {
+  color: #124b9d;
+}
+.product-price-main {
+  color: #35b226;
+  font-weight: 550;
+}
+
+.button-primary {
+  background-color: #124b9d;
+  border-radius: 9px;
+  color: white;
+  height: 45px;
+  width: 140px;
+  border: 1px solid #124b9d;
+}
+.product-link {
+  text-decoration: none;
+  margin-top: 20px;
+  color: #124b9d;
+}
+
+.id {
+  display: none;
+}
+
+/* service */
+
+#service {
+  padding: 1rem 4rem 3rem;
+  background-color: white;
+  text-align: center;
+}
+
+.upper-service {
+  margin-block: 2rem;
+  margin-block-end: rem;
+}
+
+.service-article {
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.fa-solid {
+  font-size: 80px;
+  color: #124b9d;
+}
+
+.row > div article {
+  padding: 3rem;
+  background-color: white;
+  box-shadow: 1px 1px 6px rgb(227, 227, 227);
+  border-radius: 5px;
+  margin-block: 1rem;
+}
+
+.col-lg-4 h3 {
+  margin-block: 2rem;
+  margin-bottom: 1rem;
+}
+
+.col-lg-4 p {
+  font-weight: 400;
+}
+
+/* about */
+#about {
+  padding: 1rem 4rem 10rem;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.row > div h1 {
+  text-align: left;
+}
+
+.row > div p {
+  text-align: left;
+}
+
+.row > article img {
+  height: 400px;
+  width: 550px;
+  border-radius: 5px;
+}
+
+/* End of Product */
+
+@media screen and (max-width: 1000px) {
+  #content {
+    text-align: center;
+  }
+
+  img {
+    margin-block-start: 2rem;
+    height: 400px;
+    width: 400px;
+  }
+
+  #products {
+    text-align: center;
+  }
+
+  .product-center {
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-inline-end: 0px;
+    margin-inline-start: 30px;
+  }
+
+  .row > article img {
+    height: 331px;
+    width: 369px;
+    border-radius: 5px;
+  }
+}
